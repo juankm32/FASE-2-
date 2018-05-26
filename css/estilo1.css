@@ -21,23 +21,56 @@ main{
 main{
     width: 1000px;
     height: 100px;
-    background-color: #333;
+    background-color: #005883;
 }
 header nav{
-        text-align: center;
-        background-color: #ff6309;
+        
+        background-color:#F0B429;
+
 }
-header nav ul li{
-	 display: inline-block;
-	 padding: 10px;
+
+.navegacion ul{
+	list-style: none;
 }
-header nav ul li a{
-	text-decoration: none;
-	font- font-family:  fantasy;
-	font-size: 20px;
+.menu > li{
+	padding: 0.7em 2em;
+	position: relative;
+	display: inline-block;
+}
+.menu > li:hover {
+	background: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+.menu > li > a{
+	display: block;
+	padding: 15px 20PX;
 	color: black;
-	font-weight: bold;
+	font-family: fantasy;
+	text-decoration: none; 
 }
+
+.menu li:hover > ul{
+	display: block;
+}
+
+.menu li ul{
+	display:none;
+	position: absolute;
+	min-width: 180px;
+}
+
+.menu li ul li a{
+	background:#005883;
+	padding: 10px 60px;
+	display: block;
+	color: white;
+	text-align: center;
+	width: 120px;
+	text-decoration: none;
+}
+
+
+
 
 
 section{
@@ -51,10 +84,10 @@ aside{
 
 	margin-top: 5px;
 	float:  left;
-	width:195px;
+	width:250px;
 	height:315px;
 	margin-right:5px;
-	background-color: white;
+	background-color: #808080;
 }
 aside:ntn-of-type(1){
 	height: 50px
